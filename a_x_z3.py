@@ -572,7 +572,7 @@ def settua():
 			exit()
 	elif ask == "t" or ask == "T":
 		try:
-			ua = s.get("https://raw.githubusercontent.com/avsid/data-anggaxd/main/ua.txt").text.strip()
+			ua = s.get("https://raw.githubusercontent.com/ahmedAlzwage/Fast-cracked-/main/ua.txt").text.strip()
 			save = open(".ua","w")
 			save.write(ua) 
 			save.close()
