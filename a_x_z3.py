@@ -99,8 +99,7 @@ def cookie():
 	cookie = raw_input(" \033[0;97m[\033[0;92m+\033[0;97m] Your Cookie : \033[0;96m")
 	try:
 		data = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = {
-		   'user-agent'                : 'Mozilla/5.0 (X11; CrOS i686 4319.74.0) AppleWebKit/537.36 (KHTML, like Gecko) 
-Chrome/29.0.1547.57 Safari/537.36, # Ahmed Husen Aldukali
+		   'user-agent'                : 'Mozilla/5.0 (X11; Linux i686; U; en; rv:1.8.0) Gecko/20060728 Firefox/1.5.0 Opera 9.23, # Ahmed Husen Aldukali
 		   'referer'                   : 'https://m.facebook.com/',
 		   'host'                      : 'm.facebook.com',
 		   'origin'                    : 'https://m.facebook.com',
